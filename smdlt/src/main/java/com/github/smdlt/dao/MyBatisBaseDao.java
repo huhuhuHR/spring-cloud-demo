@@ -1,4 +1,4 @@
-package com.github.gateway.dao;
+package com.github.smdlt.dao;
 
 import java.io.Serializable;
 
