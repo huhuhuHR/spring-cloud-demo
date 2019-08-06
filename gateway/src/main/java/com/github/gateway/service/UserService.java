@@ -5,6 +5,8 @@ import com.github.gateway.pojo.TmpDept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * @author huorong
  * @date 2019/8/6

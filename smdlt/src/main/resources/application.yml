@@ -1,29 +1,10 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
-server:
-  port: 9998
-
-zuul:
-  routes:
-    rdms:
-      path: /rdms/**
-      serviceId: resource-directory-management-system
-    dsp:
-      path: /dsp/**
-      serviceId: data-sharing-portal
-    dec:
-      path: /dec/**
-      serviceId: data-exchange-center-ljc
-
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       # JDBC配置
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=false&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true&allowMultiQueries=true&serverTimezone=CTT
+      url: jdbc:mysql://127.0.0.1:3306/rdms?characterEncoding=utf8&useSSL=false&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true&allowMultiQueries=true&serverTimezone=CTT
       username: root
       password: Niejing
       # 连接池配置
