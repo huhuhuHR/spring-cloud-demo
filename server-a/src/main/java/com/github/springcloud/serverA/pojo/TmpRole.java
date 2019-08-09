@@ -1,4 +1,4 @@
-package com.github.gateway.pojo;
+package com.github.springcloud.serverA.pojo;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
-package com.github.gateway.dao;
+package com.github.springcloud.serverA.dao;
 
-import com.github.gateway.pojo.TmpRole;
+import com.github.springcloud.serverA.pojo.TmpRole;
 import org.springframework.stereotype.Repository;
 
 /**

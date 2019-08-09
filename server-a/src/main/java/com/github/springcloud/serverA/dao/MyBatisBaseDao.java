@@ -1,4 +1,4 @@
-package com.github.gateway.dao;
+package com.github.springcloud.serverA.dao;
 
 import java.io.Serializable;
 

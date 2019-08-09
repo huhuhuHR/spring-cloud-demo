@@ -1,7 +1,7 @@
-package com.github.gateway.controller;
+package com.github.springcloud.serverA.controller;
 
-import com.github.gateway.pojo.TmpDept;
-import com.github.gateway.service.UserService;
+import com.github.springcloud.serverA.pojo.TmpDept;
+import com.github.springcloud.serverA.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

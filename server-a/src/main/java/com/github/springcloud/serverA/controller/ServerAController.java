@@ -14,6 +14,11 @@ public class ServerAController {
     String name;
     @GetMapping("/t1")
     public String sayHello() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return "hello world"+ name;
     }
 }

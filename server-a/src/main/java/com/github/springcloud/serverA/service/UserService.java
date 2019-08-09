@@ -1,11 +1,10 @@
-package com.github.gateway.service;
+package com.github.springcloud.serverA.service;
 
-import com.github.gateway.dao.TmpDeptDAO;
-import com.github.gateway.pojo.TmpDept;
+
+import com.github.springcloud.serverA.dao.TmpDeptDAO;
+import com.github.springcloud.serverA.pojo.TmpDept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * @author huorong
