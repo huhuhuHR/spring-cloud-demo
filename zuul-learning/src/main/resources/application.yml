@@ -10,6 +10,9 @@ zuul:
     server-a:
       path: /server-a/**
       serviceId: server-a
+    image-server:
+      path: /image-server:/**
+      serviceId: image-server
   host:
     connect-timeout-millis: 60000
     socket-timeout-millis: 60000

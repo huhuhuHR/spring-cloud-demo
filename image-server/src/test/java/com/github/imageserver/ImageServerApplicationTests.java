@@ -12,21 +12,11 @@ import java.io.File;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ImageServerApplicationTests {
-    @Value("${web.upload.path}")
-    private String path;
 
-    /**
-     * 文件上传测试
-     */
-    @Test
-    public void uploadTest() throws Exception {
-        File f = new File("/Users/huorong/Documents/idea/springcloud-learning/timg.jpeg");
-        FileCopyUtils.copy(f, new File(path + "/aaa.png"));
-    }
 
     @Test
     public void listFilesTest() {
-        File file = new File(path);
+        File file = new File("F:\\springcloud-learning\\image");
         for (File f : file.listFiles()) {
             System.out.println("fileName : " + f.getName());
         }

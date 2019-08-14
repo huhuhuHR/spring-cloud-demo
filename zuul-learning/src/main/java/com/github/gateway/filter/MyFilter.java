@@ -36,6 +36,9 @@ public class MyFilter extends ZuulFilter {
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
+        if (request.getRequestURI().endsWith("png")||request.getRequestURI().endsWith("jpg")) {
+            return null;
+        }
         Object accessToken = request.getParameter("token");
         if (accessToken == null) {
             log.warn("token is empty");

@@ -4,6 +4,7 @@ import com.github.springcloud.serverA.pojo.TmpDept;
 import com.github.springcloud.serverA.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/8/6
  */
 @RestController
+@RequestMapping("user")
 public class UserController {
     @Autowired
     UserService userService;
