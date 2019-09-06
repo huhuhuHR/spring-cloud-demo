@@ -21,4 +21,5 @@ public class InitJob implements CommandLineRunner {
         log.info("重启");
         log.info(testService.findTests().toString());
     }
+
 }
