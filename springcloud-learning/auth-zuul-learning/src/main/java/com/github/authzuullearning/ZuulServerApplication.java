@@ -16,10 +16,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableDiscoveryClient
 @EnableZuulProxy
 @EnableOAuth2Sso
-public class AuthZuulLearningApplication extends WebSecurityConfigurerAdapter {
+public class ZuulServerApplication extends WebSecurityConfigurerAdapter{
 
     public static void main(String[] args) {
-        SpringApplication.run(AuthZuulLearningApplication.class, args);
+        SpringApplication.run(ZuulServerApplication.class, args);
     }
 
     @Override

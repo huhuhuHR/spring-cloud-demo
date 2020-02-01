@@ -1,0 +1,11 @@
+server:
+  port: 7070
+spring:
+  application:
+    name: client-a
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://p2:1112/eureka/,http://p1:1111/eureka/
+  instance:
+    prefer-ip-address: true

@@ -13,8 +13,7 @@ zuul:
   routes:
     client-a:
       path: /client/**
-      serviceId: hello-service
-
+      serviceId: client-a
 security:
   basic:
     enabled: false

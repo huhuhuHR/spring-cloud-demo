@@ -24,6 +24,7 @@
         <module>server-a</module>
         <module>zuul-learning</module>
         <module>zuul-server-learning</module>
+        <module>client-a</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

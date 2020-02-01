@@ -15,35 +15,34 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @Configuration
 @EnableAuthorizationServer
 public class OAuthConfiguration extends AuthorizationServerConfigurerAdapter {
-
-
-    @Autowired
-    private AuthenticationManager authenticationManager;
-
-    @Override
+	
+	@Autowired
+	private AuthenticationManager authenticationManager;
+	
+	@Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients
-                .inMemory()
-                .withClient("zuul_server")
-                .secret("secret")
-                .scopes("WRIGTH", "read").autoApprove(true)
-                .authorities("WRIGTH_READ", "WRIGTH_WRITE")
-                .authorizedGrantTypes("implicit", "refresh_token", "password", "authorization_code");
+        .inMemory()
+        .withClient("zuul_server").redirectUris()
+        .secret("secret")
+        .scopes("WRIGTH", "read").autoApprove(true)
+        .authorities("WRIGTH_READ", "WRIGTH_WRITE")
+        .authorizedGrantTypes("implicit", "refresh_token", "password", "authorization_code");
     }
-
-    @Override
+	
+	@Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints
-                .tokenStore(jwtTokenStore())
-                .tokenEnhancer(jwtTokenConverter())
-                .authenticationManager(authenticationManager);
+        .tokenStore(jwtTokenStore())
+        .tokenEnhancer(jwtTokenConverter())
+        .authenticationManager(authenticationManager);
     }
 
     @Bean
     public TokenStore jwtTokenStore() {
         return new JwtTokenStore(jwtTokenConverter());
     }
-
+    
     @Bean
     protected JwtAccessTokenConverter jwtTokenConverter() {
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
