@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth-zuul-learning" />
+        <module name="product" />
+        <module name="image-server" />
+        <module name="eureka-server-learning" />
+        <module name="server-a" />
+        <module name="auth-server-learning" />
+        <module name="zuul-learning" />
+        <module name="fegin-learning" />
+        <module name="ribbon-learning" />
+        <module name="zuul-server-learning" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-server-learning" options="-parameters" />
+      <module name="auth-zuul-learning" options="-parameters" />
+      <module name="eureka-server-learning" options="-parameters" />
+      <module name="fegin-learning" options="-parameters" />
+      <module name="image-server" options="-parameters" />
+      <module name="product" options="-parameters" />
+      <module name="ribbon-learning" options="-parameters" />
+      <module name="server-a" options="-parameters" />
+      <module name="zuul-learning" options="-parameters" />
+      <module name="zuul-server-learning" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: auth-server
+server:
+  port: 7777
+  servlet:
+    contextPath: /uaa #web基路径
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://p2:1112/eureka/,http://p1:1111/eureka/
+  instance:
+    prefer-ip-address: true
